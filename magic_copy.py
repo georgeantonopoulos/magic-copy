@@ -24,10 +24,3 @@ def paste():
         nuke.nodePaste(PATH)
     except Exception as e:
         logging.error(f"Failed to paste nodes: {e}")
-
-# Insert following in the menu.py or menu setup script
-
-# # Magic Paste Network Setup
-# import magic_copy
-# nuke.menu('Nuke').addCommand('SB Tools/Magic Copy', "magic_copy.copy()", 'ctrl+alt+c')
-# nuke.menu('Nuke').addCommand('SB Tools/Magic Paste', "magic_copy.paste()", 'ctrl+alt+v')
